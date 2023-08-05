@@ -1,1 +1,3 @@
 # ArtistFinder
+
+New project
