@@ -1,3 +1,4 @@
-# Project for practicing advanced level on frontend side
+# HTML and CSS advanced.
 
+Project for practicing advenced level and properties of HTML and CSS such as semantics and responsive web desing.
 Klick [here](https://nazar-pichak.github.io/ArtistFinder/) to see results.
