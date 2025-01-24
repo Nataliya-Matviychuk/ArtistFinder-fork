@@ -68,7 +68,7 @@ body {
     
 }
 
-.logo {
+.logo , .home{
     color: rgba(225, 225, 225, 0.7);
     font-size: 30px;
 }
@@ -349,7 +349,7 @@ body {
     color: #a1a4b0;
     padding: 0 25px;
     padding-bottom: 50px;
-    animation: identifier 0.4;
+    animation: identifier 0.4s;
 }
 
 .copyright {
