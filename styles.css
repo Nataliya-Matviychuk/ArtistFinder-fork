@@ -47,7 +47,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #292C33;
     background-color: #eeeff3;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
 }
 
