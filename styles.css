@@ -39,7 +39,6 @@ input, button {
 html {
     --accent-color: #11A2f3;
     --accent-color-dark: #0dafda;
-
     overflow-x: hidden;
 }
 
@@ -125,6 +124,42 @@ body {
     /* padding: 25px; */
 }
 
+.main-login, .main-register {
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    animation: identifier 0.4s 0.1s backwards;
+    overflow: hidden;
+}
+
+/* LOGIN */
+
+.login {
+    background-color: #f3f5fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 50px;
+    width: 500px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* REGISTER */
+.register {
+    background-color: #f3f5fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 50px;
+    width: 500px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+
 /* INTRO SECTION */
 
 .intro {
@@ -184,7 +219,17 @@ body {
 .input-icon:nth-of-type(2) {
     top: 95px;
     left: 22px;
-} 
+}
+
+.input-icon:nth-of-type(3) {
+    top: 168px;
+    left: 22px;
+}
+
+.input-icon:nth-of-type(4) {
+    top: 241px;
+    left: 22px;
+}
 
 .btn {
     width: 100%;
@@ -413,10 +458,15 @@ body {
   }
   
   @media (max-width: 600px) {
-    .main {
+    .main, .main-login, .main-register {
       margin-left: 0;
       margin-right: 0;
       border-radius: 0;
+    }
+
+    .login, .register {
+        width: 100%;
+        border-radius: 0px;
     }
   
     .credential:nth-of-type(2) {
