@@ -1,3 +1,6 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/Nazar-Pichak/ArtistFinder)
+
+
 # HTML and CSS advanced
 
 Project for practicing an advanced level and properties of HTML and CSS such as semantics and responsive web desing.
