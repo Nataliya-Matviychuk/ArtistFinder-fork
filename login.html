@@ -15,13 +15,12 @@
     
     <header class="header">
         <i class="fa-solid fa-layer-group logo"></i>
-        <nav class="nav">
+        <nav class="nav-login">
             <ul class="links">
                 <li class="link-item">
-                    <a href="index.html" class="link link--btn">Home</a>
-                </li>
-                <li class="link-item">
-                    <i class="fa-solid fa-house-user home"></i>
+                    <a href="index.html" class="link link--btn">Home
+                        <i class="fa-solid fa-house-user"></i>
+                    </a>
                 </li>
                 
             </ul>
@@ -31,7 +30,7 @@
     <main class="main-login">
         <section class="login">
 
-            <h1 class="first-heading">Login to your account</h1>
+            <h1 class="first-heading">Login <span class="emphasis">to your</span> account</h1>
 
             <form class="form">
                 <i class="fa-solid fa-envelope input-icon"></i>
@@ -42,11 +41,22 @@
                 <button class="btn">Login</button>
             </form>
 
+            <p class="text text-p">Don't have an account? <a href="register.html" class="register-redirect">Register here</a></p>
+
+
         </section>
     </main>
 
     <footer class="footer">
-        <small class="copyright">&copy; 2023 Copyright by ArtistFinder</small>
+
+        <div class="container-icon">
+            <img src="./payment-icons/apple-pay.svg" alt="Payment icon" class="payment-icon">
+            <img src="./payment-icons/google-pay.svg" alt="Payment icon" class="payment-icon">
+            <img src="./payment-icons/mastercard-old.svg" alt="Payment icon" class="payment-icon">
+            <img src="./payment-icons/paypal.svg" alt="Payment icon" class="payment-icon">
+            <img src="./payment-icons/visa.svg" alt="Payment icon" class="payment-icon">
+        </div>
+
         <ul class="legal-list">
             <li class="legal-item">
                 <a href="#" class="legal-link">Terms & conditions</a>
@@ -55,6 +65,8 @@
                 <a href="#" class="legal-link">Privacy policy</a>
             </li>
         </ul>
+        <small class="copyright">&copy; 2023 Copyright by ArtistFinder</small>
+ 
     </footer>
 </body>
 </html>
