@@ -1,4 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/Nazar-Pichak/ArtistFinder)
+![GitHub last commit](https://img.shields.io/github/last-commit/Nazar-Pichak/ArtistFinder)[![Pull Requests](https://img.shields.io/github/issues-pr/Nazar-Pichak/ArtistFinder)](https://github.com/Nazar-Pichak/ArtistFinder/pulls)
 
 
 # HTML and CSS advanced
