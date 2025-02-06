@@ -44,6 +44,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   color: #292c33;
   background-color: #eeeff3;
@@ -129,6 +130,7 @@ body {
 
 .main-login,
 .main-register {
+  min-height: 70vh;
   max-width: 1150px;
   margin: 0 auto;
   margin-bottom: 35px;
@@ -401,6 +403,7 @@ body {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: auto !important;
   color: #a1a4b0;
   padding: 0 25px;
   padding-bottom: 50px;
