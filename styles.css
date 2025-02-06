@@ -130,7 +130,7 @@ body {
 
 .main-login,
 .main-register {
-  min-height: 70vh;
+  min-height: calc(100vh - 200px);
   max-width: 1150px;
   margin: 0 auto;
   margin-bottom: 35px;
