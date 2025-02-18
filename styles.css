@@ -52,6 +52,14 @@ body {
   position: relative;
 }
 
+.wrapper {
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .bg {
   position: absolute;
   z-index: -1;
@@ -66,6 +74,7 @@ body {
   margin: 0 auto;
   padding: 25px;
   animation: identifier 0.4s;
+  width: 100%;
 }
 
 .logo,
@@ -130,7 +139,6 @@ body {
 
 .main-login,
 .main-register {
-  min-height: calc(100vh - 200px);
   max-width: 1150px;
   margin: 0 auto;
   margin-bottom: 35px;
@@ -408,6 +416,7 @@ body {
   padding: 0 25px;
   padding-bottom: 50px;
   animation: identifier 0.4s;
+  width: 100%;
 }
 
 .copyright {
