@@ -44,6 +44,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   color: #292c33;
@@ -51,14 +53,6 @@ body {
   overflow: hidden;
   position: relative;
 }
-
-.wrapper {
-  box-sizing: border-box;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 
 .bg {
   position: absolute;
@@ -134,7 +128,7 @@ body {
   box-shadow: 0 4px 44px rgba(0, 0, 0, 0.08);
   animation: identifier 0.4s 0.1s backwards;
   overflow: hidden;
-  /* padding: 25px; */
+  width: 100%;
 }
 
 .main-login,
