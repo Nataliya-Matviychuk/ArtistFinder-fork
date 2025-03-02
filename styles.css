@@ -40,12 +40,14 @@ button {
 html {
   --accent-color: #11a2f3;
   --accent-color-dark: #0dafda;
+  --white-color: #fff;
   overflow-x: hidden;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
   color: #292c33;
@@ -67,19 +69,34 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 25px;
-  animation: identifier 0.4s;
   width: 100%;
 }
 
-.logo,
-.home {
-  color: rgba(225, 225, 225, 0.7);
-  font-size: 30px;
+.sticky-header {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
 }
 
-.logo-home {
+.dark-header {
+  background-color: rgba(17, 162, 243, 0.9);
+  animation: identifier 0.4s;
+  transition: all 0.4s;
+}
+
+.logo {
   color: rgba(225, 225, 225, 0.7);
   font-size: 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.logo:hover {
+  color: rgba(225, 225, 225, 1);
+}
+
+.dark-logo {
+  color: var(--white-color);
 }
 
 .nav {
@@ -101,17 +118,26 @@ body {
   transition: all 0.2s;
 }
 
+.dark-link {
+  color: var(--white-color);
+}
+
 .link:hover {
   color: rgba(225, 225, 225, 1);
 }
 
 .link--btn {
-  color: #fff;
+  color: var(--white-color);
   background-color: var(--accent-color);
   transition: all 0.2s;
   padding: 10px 18px;
   border-radius: 3px;
 }
+
+.dark--btn {
+  border: 0.1px solid rgba(225, 225, 225, 1);
+}
+
 
 .link--btn:hover {
   background-color: var(--accent-color-dark);
@@ -120,11 +146,12 @@ body {
 /* MAIN */
 
 .main {
-  background-color: #fff;
+  background-color: var(--white-color);
   max-width: 1150px;
   margin: 0 auto;
   border-radius: 5px;
   margin-bottom: 35px;
+  margin-top: 100px;
   box-shadow: 0 4px 44px rgba(0, 0, 0, 0.08);
   animation: identifier 0.4s 0.1s backwards;
   overflow: hidden;
@@ -135,6 +162,7 @@ body {
 .main-register {
   max-width: 1150px;
   margin: 0 auto;
+  margin-top: 100px;
   margin-bottom: 35px;
   animation: identifier 0.4s 0.1s backwards;
   overflow: hidden;
@@ -252,7 +280,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
-  color: #fff;
+  color: var(--white-color);
   border-radius: 3px;
   background-color: var(--accent-color);
   transition: all 0.2s;
@@ -408,7 +436,7 @@ body {
   margin-top: auto !important;
   color: #a1a4b0;
   padding: 0 25px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   animation: identifier 0.4s;
   width: 100%;
 }
@@ -443,6 +471,7 @@ body {
 
 @media (max-width: 1200px) {
   .main {
+    width: 95%;
     margin-left: 25px;
     margin-right: 25px;
   }
@@ -500,6 +529,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     border-radius: 0;
+    width: 100%;
   }
 
   .login,
@@ -554,12 +584,17 @@ body {
   }
 
   .link--btn--media {
-    color: #fff;
+    color: var(--white-color);
     background-color: var(--accent-color);
     transition: all 0.2s;
     padding: 10px 18px;
     border-radius: 3px;
   }
+
+  .dark--btn--media {
+    border: 0.1px solid rgba(225, 225, 225, 1);
+  }
+
 }
 
 @media (max-width: 329px) {
